@@ -45,7 +45,7 @@ def welcome(request):
 	return render(request, 'welcome.html', {'pets': pets})
 
 def profile(request):
-	users = User1.objects.all()
+	users = User.objects.all()
 	return render(request, 'profile.html', {'users': users})
 # 	will use render instead
 #	return HttpResponse('<p> home view</p>')
